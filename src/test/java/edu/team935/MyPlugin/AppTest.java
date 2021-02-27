@@ -1,4 +1,4 @@
-package edu.vortx3735.MyPlugin;
+package edu.team935.MyPlugin;
 
 import junit.framework.Test;
 import junit.framework.TestCase;

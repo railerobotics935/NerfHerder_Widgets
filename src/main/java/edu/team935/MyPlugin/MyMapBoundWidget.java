@@ -1,4 +1,4 @@
-package edu.vortx3735.MyPlugin;
+package edu.team935.MyPlugin;
 
 import edu.wpi.first.shuffleboard.api.data.MapData;
 import edu.wpi.first.shuffleboard.api.data.types.MapType;

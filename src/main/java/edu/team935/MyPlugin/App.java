@@ -1,4 +1,4 @@
-package edu.vortx3735.MyPlugin;
+package edu.team935.MyPlugin;
 
 import java.util.List;
 
@@ -9,7 +9,7 @@ import edu.wpi.first.shuffleboard.api.plugin.Plugin;
 import edu.wpi.first.shuffleboard.api.widget.ComponentType;
 import edu.wpi.first.shuffleboard.api.widget.WidgetType;
 
-@Description(group = "VorTX 3735", name = "MyPlugin", summary = "A test plugin", version = "1.0.0")
+@Description(group = "Team 935", name = "MyPlugin", summary = "A test plugin", version = "1.0.0")
 public class App extends Plugin {
 	@Override
 	@SuppressWarnings("all")

@@ -5,7 +5,7 @@
 <?import eu.hansolo.medusa.Gauge?>
 
 <AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:id="_thePane"
-	fx:controller="edu.vortx3735.MyPlugin.MyMapBoundWidget" minWidth="256" minHeight="600">
+	fx:controller="edu.team935.MyPlugin.MyMapBoundWidget" minWidth="256" minHeight="600">
 	<VBox AnchorPane.topAnchor="15" AnchorPane.bottomAnchor="0"
 		AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0">
 		<Gauge fx:id="_topGauge" skinType="SIMPLE_DIGITAL" />
