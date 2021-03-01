@@ -12,6 +12,7 @@ import javafx.fxml.FXML;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Pane;
 import javafx.scene.shape.Rectangle;
+import javafx.scene.text.Text;
 import edu.wpi.first.shuffleboard.api.prefs.Group;
 import edu.wpi.first.shuffleboard.api.prefs.Setting;
 import java.util.LinkedList;
@@ -25,6 +26,7 @@ public class MyMapBoundWidget extends SimpleAnnotatedWidget<MapData> implements 
 
 	@FXML
 	private Rectangle _target;
+	private Text _xpos;
 
 	private final SimpleStringProperty _targetXKey = new SimpleStringProperty(this, "targetX", "");
 	private final SimpleStringProperty _targetYKey = new SimpleStringProperty(this, "targetY", "");
@@ -123,13 +125,17 @@ public class MyMapBoundWidget extends SimpleAnnotatedWidget<MapData> implements 
 		// then updates the appropriate parameter of the rectangle.
 
 		if (_targetXKey.getValue() != null && !_targetXKey.getValue().isEmpty() && dataProperty().get().get(_targetXKey.getValue()) != null)
+		{
 			_target.setX((double) dataProperty().get().get(_targetXKey.getValue()));
+		}
 
 		if (_targetYKey.getValue() != null && !_targetYKey.getValue().isEmpty() && dataProperty().get().get(_targetYKey.getValue()) != null)
 			_target.setY((double) dataProperty().get().get(_targetYKey.getValue()));
 
 		if (_targetWKey.getValue() != null && !_targetWKey.getValue().isEmpty() && dataProperty().get().get(_targetWKey.getValue()) != null)
+		{
 			_target.setWidth((double) dataProperty().get().get(_targetWKey.getValue()));
+		}
 
 		if (_targetHKey.getValue() != null && !_targetHKey.getValue().isEmpty() && dataProperty().get().get(_targetHKey.getValue()) != null)
 			_target.setHeight((double) dataProperty().get().get(_targetHKey.getValue()));
